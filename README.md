@@ -53,3 +53,20 @@ git checkout nombre-rama
 # Actualizar tu rama local con los últimos cambios de GitHub
 git fetch origin
 git merge origin/main
+
+8. Flujo de trabajo diario para todos
+
+# Siempre antes de empezar: actualizar desde main
+git checkout main
+git pull origin main
+
+# Moverse a su rama y actualizarla
+git checkout mi-rama
+git merge main
+
+# Trabajar, hacer commits...
+git add .
+git commit -m "Mi feature"
+
+# Subir cambios a SU rama
+git push origin mi-rama
